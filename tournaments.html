@@ -1,0 +1,237 @@
+<!--
+
+    Author: Lochlann O Neill
+    Date:   26/12/2021
+    Links:  https://linktr.ee/lochlannoneill
+    
+    To Do:
+
+    Doing:
+
+    Done:
+        
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICL - Tournaments</title>
+    <link rel="icon" type="image/x-icon" href="images/logos/logo-transparent.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="js/script.js" defer></script>
+</head>
+
+
+<body>
+
+    <a id="top"></a>
+
+    <!-- __________________________________________________________________________________________________________________ -->
+    <!-- _____________________________________________________ navbar _____________________________________________________ -->
+    <!-- __________________________________________________________________________________________________________________ -->
+    <nav class="navbar navbar-expand-lg navbar-dark top" id="navbar">
+        <a href="index.html">
+            <img class="navbar-brand" src="images/logos/logo-transparent.ico" id="navbar-logo" alt="Logo of ICL">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+ 
+        <!-- Left Menu -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <!-- Home -->
+                <li class="nav-item dropdown">   <!-- 'dropdown' added because the hover effect doesn't work without it for some reason -->
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <!-- Games -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="Games.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Games</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Games.html">CS:GO</a>
+                        <hr>
+                        <a class="dropdown-item" href="Games.html">Valorant</a>
+                        <hr>
+                    </div>
+                </li>
+
+                <!-- Tournaments -->
+                <li class="nav-item dropdown active">
+                    <a class="nav-link" href="tournaments.html">Tournaments<span class="sr-only">(current)</span></a>
+                </li>
+                
+                <!-- Rules -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="https://docs.google.com/document/d/1NDVYNLIeFasAgxpt-W0M30JwejP8BE1KDHeiOC83RNc/edit">Rules</a>
+                </li>
+
+                <!-- About -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+
+                <!-- Contact Us -->
+                <li class="nav-item dropdown">   <!-- 'dropdown' added because the hover effect doesn't work without it for some reason -->
+                    <a class="nav-link glow-button" href="contact.html">Contact</a>
+                </li>
+            </ul>
+
+
+            <!-- Right Menu -->
+            <div class="collapse navbar-collapse" id="navbar-faceit-login">
+                <ul class="navbar-nav ml-auto">
+
+                    <!-- Faceit Login (Placeholder) -->
+                    <li>
+                        <button type="button" class="btn btn-secondary">Faceit Login {Placeholder}</button>
+                    </li>
+               
+                </ul>
+            </div>
+
+        </div><!-- collapse navbar -->
+    </nav><!-- menu -->
+
+
+
+
+    <!-- ___________________________________________________________________________________________________________________ -->
+    <!-- ___________________________________________________ jumbotron _____________________________________________________ -->
+    <!-- ___________________________________________________________________________________________________________________ -->
+    <div class="jumbotron bg-transparent">
+        <h1 class="display-4">
+            <img class="jumbotron-logo" src="images/logos/logo-transparent.png" alt="Logo of ICL">
+            Tournaments
+        </h1>
+    </div> <!-- jumbotron -->
+
+
+
+
+    <!-- ___________________________________________________________________________________________________________________ -->
+    <!-- ___________________________________________________ sections ______________________________________________________ -->
+    <!-- ___________________________________________________________________________________________________________________ -->
+
+    <!-- Tournaments -->
+    <section class="container">
+
+        <h2>Tournaments</h2>
+        <div class="section-text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, architecto vero. Nihil deserunt magnam ad enim illum recusandae perspiciatis sunt dolor id, at, a minus ipsum labore quo. Maxime, numquam?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, architecto vero. Nihil deserunt magnam ad enim illum recusandae perspiciatis sunt dolor id, at, a minus ipsum labore quo. Maxime, numquam?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, architecto vero. Nihil deserunt magnam ad enim illum recusandae perspiciatis sunt dolor id, at, a minus ipsum labore quo. Maxime, numquam?</p>
+        </div>
+
+    </section>
+
+    
+
+    <!-- ___________________________________________________________________________________________________________________ -->
+    <!-- ______________________________________________________ footer ______________________________________________________-->
+    <!-- ___________________________________________________________________________________________________________________ -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-left">
+
+            <div class="row text-center text-left">
+
+                <!-- ICL -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-dark">Irish Challenger League</h5>
+                    <p class="text-muted">Ireland's official CSGO and Valorant community.</p>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem non, exercitationem voluptate facilis magni impedit esse recusandae praesentium dignissimos vel ratione quia. Nobis accusantium laborum dignissimos eius quo, consequatur reiciendis.</p>
+                </div><!-- column -->
+
+                <!-- Games -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-dark">Faceit Hubs</h5>
+                    <p class="text-muted">
+                        <a href="https://www.faceit.com/en/hub/d9dba8bd-6bf9-435f-bdbc-808ae42d21bd/Irish%20Challenger%20League" class="text-muted" style="text-decoration: none;">CS:GO 5v5</a>
+                    </p>
+                    <p class="text-muted">
+                        <a href="https://www.faceit.com/en/hub/c43a3d74-5ddc-45bd-bca3-569c1ff5df51/ICL%20-%20CSGO%201v1%20Aim" class="text-muted" style="text-decoration: none;">CS:GO 1v1</a>
+                    </p>
+                    <p class="text-muted">
+                        <a href="https://www.faceit.com/en/clan/25d33705-6e68-4d24-bf43-892426c30db0/ICL%20Clan" class="text-muted" style="text-decoration: none;">CS:GO Clan</a>
+                    </p>
+                    <p class="text-muted">
+                        <a href="https://www.faceit.com/en/hub/2bf0d17a-dbea-44e3-a974-be938f319ad2/ICL%20-%20CSGO%202v2%20Wingman" class="text-muted" style="text-decoration: none;">CS:GO Wingman</a>
+                    </p>
+                    <p class="text-muted">
+                        <a href="https://www.faceit.com/en/hub/bd4d39fc-0eb4-4657-bbd4-40ad9ca6915d/ICL%20-%20CSGO%20Danger%20Zone" class="text-muted" style="text-decoration: none;">CS:GO Danger Zone</a>
+                    </p>
+                    <p class="text-muted">
+                        <a href="https://www.faceit.com/en/hub/6a1da082-546e-4f7d-bbe6-54a0e42b9981/ICL%20-%20Valorant" class="text-muted" style="text-decoration: none;">Valorant 5v5</a>
+                    </p>
+                </div><!-- column -->
+
+
+                <!-- Links -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-dark">Socials</h5>
+                    <p class="text-muted">
+                        <i class="fa fa-discord"></i>
+                        <a href="https://discord.gg/zahY9BmJ" class="text-muted" style="text-decoration: none;">Discord</a>
+                    </p>
+                    <p class="text-muted">
+                        <i class="fa fa-twitter"></i>
+                        <a href="https://twitter.com/icl_hub" class="text-muted" style="text-decoration: none;">Twitter</a>
+                    </p>
+                    <p class="text-muted">
+                        <i class="fa fa-youtube"></i>
+                        <a href="https://www.youtube.com/channel/UCHsi6XSqTQAJPgDHQnUvKyA" class="text-muted" style="text-decoration: none;">YouTube</a>
+                    </p>
+                    <p class="text-muted">
+                        <i class="fa fa-twitch"></i>
+                        <a href="https://www.twitch.tv/icl_hub" class="text-muted" style="text-decoration: none;">Twitch</a>
+                    </p>
+                    <p class="text-muted">
+                        <i class="fa fa-steam"></i>
+                        <a href="https://steamcommunity.com/groups/ICL_hub" class="text-muted" style="text-decoration: none;">Steam</a>
+                    </p>
+                    <p class="text-muted">
+                        <!-- <i class="fa fa-faceit"></i> -->
+                        <a href="https://www.faceit.com/en/organizers/a53ee663-7009-450b-8f17-8c8422169595/Irish%20Challenger%20League" class="text-muted" style="text-decoration: none;">Faceit</a>
+                    </p>
+                    <p class="text-muted">
+                        <!-- <i class="fa fa-cahllengermode"></i> -->
+                        <a href="https://www.challengermode.com/s/ICL" class="text-muted" style="text-decoration: none;">Challengermode</a>
+                    </p>
+                </div><!-- column -->
+            </div><!-- row -->
+
+            <hr>
+
+            <div class="row-align-items-center">
+
+                <div class="col-md-7 col-lg-8">
+                    <p class="text-muted">Copyright © 2021 Irish Challenger League. All Rights Reserved by:
+                        <a href="#">
+                            <strong class="text-dark">{Placeholder}</strong>
+                        </a>
+                        | Website by 
+                        <a id="author-link" href=https://linktr.ee/lochlannoneill>
+                            <strong>Lochlann O Neill</strong>
+                        </a>
+                    </p>
+                </div>
+
+            </div>
+            
+        </div><!-- container -->    
+    </footer>
+
+</body>
+
+
+</html>
