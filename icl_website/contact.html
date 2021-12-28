@@ -5,7 +5,9 @@
     Links:  https://linktr.ee/lochlannoneill
     
     To Do:
-
+        Jumbotron - change 'phone' and 'email' to favicons
+        Jumbotron - make the button create a collapsable form instead of a button to move the page down
+        change color of 'send' button text and favicon from transparent to white
     Doing:
 
     Done:
@@ -20,21 +22,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ICL - Contact</title>
     <link rel="icon" type="image/x-icon" href="images/logos/logo-transparent.ico">
-
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles.css">    
-
+    <link rel="stylesheet" href="css/styles.css">    
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="script.js" defer></script>
+    <script src="js/script.js" defer></script>
 </head>
-
-
-
 
 
 <body>
@@ -44,7 +40,7 @@
     <!-- __________________________________________________________________________________________________________________ -->
     <!-- _____________________________________________________ navbar _____________________________________________________ -->
     <!-- __________________________________________________________________________________________________________________ -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary top" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark top" id="navbar">
         <a href="index.html">
             <img class="navbar-brand" src="images/logos/logo-transparent.ico" id="navbar-logo" alt="Logo of ICL">
         </a>
@@ -53,9 +49,10 @@
         </button>
     
  
-        <!-- menu -->
+        <!-- Left Menu -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
+
                 <!-- Home -->
                 <li class="nav-item dropdown">   <!-- 'dropdown' added because the hover effect doesn't work without it for some reason -->
                     <a class="nav-link" href="index.html">Home</a>
@@ -93,11 +90,17 @@
                 </li>
             </ul>
 
-            <!-- Faceit Login -->
+
+            <!-- Right Menu -->
             <div class="collapse navbar-collapse" id="navbar-faceit-login">
                 <ul class="navbar-nav ml-auto">
-                    <li><button type="button" class="btn btn-secondary">Faceit Login {Placeholder}</button></li>
-               </ul>
+
+                    <!-- Faceit Login (Placeholder) -->
+                    <li>
+                        <button type="button" class="btn btn-secondary">Faceit Login {Placeholder}</button>
+                    </li>
+               
+                </ul>
             </div>
 
         </div><!-- collapse navbar -->
@@ -109,25 +112,40 @@
     <!-- ___________________________________________________________________________________________________________________ -->
     <!-- ___________________________________________________ jumbotron _____________________________________________________ -->
     <!-- ___________________________________________________________________________________________________________________ -->
-    <div class="jumbotron">
+    <div class="jumbotron large-jumbotron bg-transparent">
         <h1 class="display-4">
             <img class="jumbotron-logo" src="images/logos/logo-transparent.png" alt="Logo of ICL">
             Contact
         </h1>
+        <p class="text-muted">
+            We'd love to hear from you! Please send us a message using the form below or by contacting our socials.
+        </p>
         <br>
         <div class="contact">
-            <h2><span class="contact-type-span">Email: </span>{Placeholder}</h2>
-            <h2><span class="contact-type-span">Twitter: </span>@icl_hub</h2>
+
+            <h2>
+                <i class="contact-type-i fa fa-twitter" id="contact-favicon-twitter"></i>
+                @icl_hub
+            </h2>
+
+            <h2>
+                <i class="contact-type-i fa fa-steam" id="contact-favicon-steam"></i>
+                ICL_hub
+            </h2>
+
+            <h2>
+                <i class="contact-type-i fa fa-envelope" id="contact-favicon-mail"></i>
+                {Placeholder}
+            </h2>
+
+            <br>
+
+            <div class="backtotop d-flex justify-content-center">
+                <a class="btn btn-large btn-secondary glow-on-hover" href=#form><strong>Send Us A Message</strong></a>
+            </div>
+
         </div><!-- section-text -->
     </div> <!-- jumbotron -->
-
-
-
-
-     <!-- button back to top
-     <div class="d-flex justify-content-center">
-        <a class="btn btn-large btn-primary glow-on-hover" href=#top>Back to top</a>
-    </div> -->
 
 
 
@@ -141,38 +159,37 @@
         <div class="row">
             <div class="col-md-10 mx-auto">
                 <div class="contact-form">
-                    <h2>Send Us A Message</h2>
-                    <p class="hint-text">We'd love to hear from you, please drop us a line if you've any query or question.</p>       
-                    <form action="/examples/actions/confirmation.php" method="post">
+                    <!-- <h2>Send Us A Message</h2>    -->
+                    <form id="form" action="/examples/actions/confirmation.php" method="post">
                         <div class="row">
                             <div class="col-sm-4">
                                 <div class="form-group">
-                                    <label for="inputName">Name</label>
+                                    <label for="inputName"><strong>Name</strong></label>
                                     <input type="text" class="form-control" id="inputName" placeholder="Required" required>
                                 </div>
                             </div>                
                             <div class="col-sm-4">
                                 <div class="form-group">
-                                    <label for="inputEmail">Email</label>
+                                    <label for="inputEmail"><strong>Email</strong></label>
                                     <input type="email" class="form-control" id="inputEmail" placeholder="Required" required>
                                 </div>
                             </div>
                             <div class="col-sm-4">
                                 <div class="form-group">
-                                    <label for="inputPhone">Phone</label>
+                                    <label for="inputPhone"><strong>Phone</strong></label>
                                     <input type="text" class="form-control" id="inputPhone" placeholder="Optional">
                                 </div>
                             </div>
                         </div>            
                         <div class="form-group">
-                            <label for="inputSubject">Subject</label>
+                            <label for="inputSubject"><strong>Subject</strong></label>
                             <input type="text" class="form-control" id="inputSubject" placeholder="Required" required>
                         </div>
                         <div class="form-group">
-                            <label for="inputMessage">Message</label>
-                            <textarea class="form-control" id="inputMessage" rows="5" placeholder="Reruired" required></textarea>
+                            <label for="inputMessage"><strong>Message</strong></label>
+                            <textarea class="form-control" id="inputMessage" rows="5" placeholder="Required" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Send</button>
+                        <button type="submit" class="btn btn-secondary"><i class="fa fa-paper-plane"></i><strong> Send</strong></button>
                     </form>
                 </div>
             </div>
@@ -187,8 +204,8 @@
     <!-- ______________________________________________________ footer ______________________________________________________-->
     <!-- ___________________________________________________________________________________________________________________ -->
     <footer class="bg-dark text-white pt-5 pb-4">
-
         <div class="container text-center text-md-left">
+
             <div class="row text-center text-left">
 
                 <!-- ICL -->
@@ -200,7 +217,7 @@
 
                 <!-- Games -->
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-dark">Games</h5>
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-dark">Faceit Hubs</h5>
                     <p class="text-muted">
                         <a href="https://www.faceit.com/en/hub/d9dba8bd-6bf9-435f-bdbc-808ae42d21bd/Irish%20Challenger%20League" class="text-muted" style="text-decoration: none;">CS:GO 5v5</a>
                     </p>
@@ -222,35 +239,35 @@
                 </div><!-- column -->
 
 
-                <!-- Links -->   <!-- TODO - add favicons to footer -->
+                <!-- Links -->
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                     <h5 class="text-uppercase mb-4 font-weight-bold text-dark">Socials</h5>
                     <p class="text-muted">
-                        <i class="fab fa-facebook"></i>
+                        <i class="fa fa-discord"></i>
                         <a href="https://discord.gg/zahY9BmJ" class="text-muted" style="text-decoration: none;">Discord</a>
                     </p>
                     <p class="text-muted">
-                        <i class="fab fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
                         <a href="https://twitter.com/icl_hub" class="text-muted" style="text-decoration: none;">Twitter</a>
                     </p>
                     <p class="text-muted">
-                        <i class="fab fa-facebook"></i>
+                        <i class="fa fa-youtube"></i>
                         <a href="https://www.youtube.com/channel/UCHsi6XSqTQAJPgDHQnUvKyA" class="text-muted" style="text-decoration: none;">YouTube</a>
                     </p>
                     <p class="text-muted">
-                        <i class="fab fa-facebook"></i>
+                        <i class="fa fa-twitch"></i>
                         <a href="https://www.twitch.tv/icl_hub" class="text-muted" style="text-decoration: none;">Twitch</a>
                     </p>
                     <p class="text-muted">
-                        <i class="fab fa-facebook"></i>
+                        <i class="fa fa-steam"></i>
                         <a href="https://steamcommunity.com/groups/ICL_hub" class="text-muted" style="text-decoration: none;">Steam</a>
                     </p>
                     <p class="text-muted">
-                        <i class="fab fa-facebook"></i>
+                        <!-- <i class="fa fa-faceit"></i> -->
                         <a href="https://www.faceit.com/en/organizers/a53ee663-7009-450b-8f17-8c8422169595/Irish%20Challenger%20League" class="text-muted" style="text-decoration: none;">Faceit</a>
                     </p>
                     <p class="text-muted">
-                        <i class="fab fa-facebook"></i>
+                        <!-- <i class="fa fa-cahllengermode"></i> -->
                         <a href="https://www.challengermode.com/s/ICL" class="text-muted" style="text-decoration: none;">Challengermode</a>
                     </p>
                 </div><!-- column -->
@@ -273,9 +290,8 @@
                 </div>
 
             </div>
-
+            
         </div><!-- container -->    
-         
     </footer>
 
 </body>
