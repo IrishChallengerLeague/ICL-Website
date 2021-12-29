@@ -185,6 +185,9 @@ hr {
     margin: 0;
 }
 
+.large-jumbotron .jumbotron-logo {
+    height: 240px;
+}
 
 .jumbotron h1 {
     margin-bottom: 0px;
