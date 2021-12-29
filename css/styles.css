@@ -175,7 +175,7 @@ hr {
 .large-jumbotron {
     min-height: 800px;
     padding-top: 0;
-    padding-bottom: 120px;
+    /* padding-bottom: 240px; */
     border-bottom: none;
 }
 
