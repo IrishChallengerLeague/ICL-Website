@@ -5,17 +5,11 @@
     Links:  https://linktr.ee/lochlannoneill
     
     To Do:
-        navbar - 'games' dropdown tab should link straight to valorant
+        navbar - 'games' dropdown option for valorant should link straight to valorant tab
         make each carousel a link to its respective faceit hub
         javascript - when a tab is clicked > change jumbotron image + text to csgo/valorant
-        carousel indicators in csgo tab not positioned correctly
 
     Doing:
-
-    Done:
-        why is valorant carousel showing in the csgo tab???
-
-    Ideas:
         
 -->
 
@@ -129,233 +123,235 @@
 
 
     <!-- ___________________________________________________________________________________________________________________ -->
-    <!-- ___________________________________________________ sections ______________________________________________________ -->
+    <!-- _____________________________________________________ tabs ________________________________________________________ -->
     <!-- ___________________________________________________________________________________________________________________ -->
     <ul class="tabs">
         <li data-tab-target="#csgo" class="active tab">CS:GO</li>
         <li data-tab-target="#valorant" class="tab">Valorant</li>
     </ul>
 
+    <div class="container-fluid">
+        <div class="tab-content">
 
-    <div class="tab-content">
-
-        <!-- CSGO Tab -->
-        <div id="csgo" data-tab-content class="active">
-            <!-- <section class="container">
-                <h2>CS:GO</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, modi nesciunt cupiditate, quasi repudiandae consequuntur magnam vel, voluptatibus ad nisi explicabo aut soluta doloremque atque molestiae qui rerum dolorum animi.</p>
-            </section> -->
-
-            <section class="container">
-                <div class="row">
-                    <div class="col-md-10 mx-auto">
-                        <div id="carousel-csgo" class="carousel slide" data-ride="carousel" data-interval="0">
-                        <!-- Carousel indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel-valorant" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-valorant" data-slide-to="1"></li>
-                        </ol>   
-
-                        <!-- Wrapper for carousel items -->
-                        <div class="carousel-inner">
-                            <!-- First row -->
-                            <div class="carousel-item active">
-                                <div class="row">
-
-                                    <!-- 5v5 Competitive -->
-                                    <div class="col-sm-4">
-                                        <div class="thumb-wrapper">
-                                            <div class="img-box">
-                                                <img src="images/logos/logo-transparent.png" class="img-fluid" alt="">
+            <!-- CSGO Tab -->
+            <div id="csgo" data-tab-content class="active">
+                <!-- <section class="container">
+                    <h2>CS:GO</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, modi nesciunt cupiditate, quasi repudiandae consequuntur magnam vel, voluptatibus ad nisi explicabo aut soluta doloremque atque molestiae qui rerum dolorum animi.</p>
+                </section> -->
+    
+                <section class="container">
+                    <div class="row">
+                        <div class="col-md-10 mx-auto">
+                            <div id="carousel-csgo" class="carousel slide" data-ride="carousel" data-interval="0">
+                            <!-- Carousel indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-valorant" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-valorant" data-slide-to="1"></li>
+                            </ol>   
+    
+                            <!-- Wrapper for carousel items -->
+                            <div class="carousel-inner">
+                                <!-- First row -->
+                                <div class="carousel-item active">
+                                    <div class="row">
+    
+                                        <!-- 5v5 Competitive -->
+                                        <div class="col-sm-4">
+                                            <div class="thumb-wrapper">
+                                                <div class="img-box">
+                                                    <img src="images/logos/logo-transparent.png" class="img-fluid" alt="">
+                                                </div>
+                                                <div class="thumb-content">
+                                                    <h4>5v5 Competitive</h4>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam.</p>
+                                                </div>						
                                             </div>
-                                            <div class="thumb-content">
-                                                <h4>5v5 Competitive</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam.</p>
-                                            </div>						
                                         </div>
-                                    </div>
-
-                                    <!-- 1v1 Aim Battles -->
-                                    <div class="col-sm-4">
-                                        <div class="thumb-wrapper">
-                                            <div class="img-box">
-                                                <img src="images/logos/logo-1v1.png" class="img-fluid" alt="">
+    
+                                        <!-- 1v1 Aim Battles -->
+                                        <div class="col-sm-4">
+                                            <div class="thumb-wrapper">
+                                                <div class="img-box">
+                                                    <img src="images/logos/logo-1v1.png" class="img-fluid" alt="">
+                                                </div>
+                                                <div class="thumb-content">
+                                                    <h4>1v1 Aim Battles</h4>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam.</p>
+                                                </div>						
                                             </div>
-                                            <div class="thumb-content">
-                                                <h4>1v1 Aim Battles</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam.</p>
-                                            </div>						
                                         </div>
-                                    </div>
-
-                                    <!-- Clan -->
-                                    <div class="col-sm-4">
-                                        <div class="thumb-wrapper">
-                                            <div class="img-box">
-                                                <img src="images/placeholder.jpg" class="img-fluid" alt="">
+    
+                                        <!-- Clan -->
+                                        <div class="col-sm-4">
+                                            <div class="thumb-wrapper">
+                                                <div class="img-box">
+                                                    <img src="images/placeholder.jpg" class="img-fluid" alt="">
+                                                </div>
+                                                <div class="thumb-content">
+                                                    <h4>Clan</h4>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam.</p>
+                                                </div>						
                                             </div>
-                                            <div class="thumb-content">
-                                                <h4>Clan</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam.</p>
-                                            </div>						
                                         </div>
+    
                                     </div>
-
                                 </div>
-                            </div>
-
-                            <!-- Second row -->
-                            <div class="carousel-item">
-                                <div class="row">
-
-                                    <!-- Wingman -->
-                                    <div class="col-sm-4">
-                                        <div class="thumb-wrapper">
-                                            <div class="img-box">
-                                                <img src="images/placeholder.jpg" class="img-fluid" alt="">
+    
+                                <!-- Second row -->
+                                <div class="carousel-item">
+                                    <div class="row">
+    
+                                        <!-- Wingman -->
+                                        <div class="col-sm-4">
+                                            <div class="thumb-wrapper">
+                                                <div class="img-box">
+                                                    <img src="images/placeholder.jpg" class="img-fluid" alt="">
+                                                </div>
+                                                <div class="thumb-content">
+                                                    <h4>Wingman</h4>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam.</p>
+                                                </div>						
                                             </div>
-                                            <div class="thumb-content">
-                                                <h4>Wingman</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam.</p>
-                                            </div>						
                                         </div>
-                                    </div>
-
-                                    <!-- Danger Zone -->
-                                    <div class="col-sm-4">
-                                        <div class="thumb-wrapper">
-                                            <div class="img-box">
-                                                <img src="images/placeholder.jpg" class="img-fluid" alt="">
+    
+                                        <!-- Danger Zone -->
+                                        <div class="col-sm-4">
+                                            <div class="thumb-wrapper">
+                                                <div class="img-box">
+                                                    <img src="images/placeholder.jpg" class="img-fluid" alt="">
+                                                </div>
+                                                <div class="thumb-content">
+                                                    <h4>Danger Zone</h4>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam.</p>
+                                                </div>						
                                             </div>
-                                            <div class="thumb-content">
-                                                <h4>Danger Zone</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam.</p>
-                                            </div>						
                                         </div>
+    
+    
                                     </div>
-
-
                                 </div>
+    
+    
                             </div>
-
-
+                            <!-- Carousel controls -->
+                            <a class="carousel-control-prev" href="#carousel-csgo" data-slide="prev">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-csgo" data-slide="next">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
                         </div>
-                        <!-- Carousel controls -->
-                        <a class="carousel-control-prev" href="#carousel-csgo" data-slide="prev">
-                            <i class="fa fa-angle-left"></i>
-                        </a>
-                        <a class="carousel-control-next" href="#carousel-csgo" data-slide="next">
-                            <i class="fa fa-angle-right"></i>
-                        </a>
-                    </div>
-                    </div>
-                </div>
-            </section>
-
-        </div>
-
-
-        <!-- Valorant Tab -->
-        <div id="valorant" data-tab-content>
-            <!-- <section class="container">
-                <h2>Valorant</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, modi nesciunt cupiditate, quasi repudiandae consequuntur magnam vel, voluptatibus ad nisi explicabo aut soluta doloremque atque molestiae qui rerum dolorum animi.</p>
-            </section> -->
-
-            <section class="container">
-                <div class="row">
-                    <div class="col-md-10 mx-auto">
-                        <div id="carousel-valorant" class="carousel slide" data-ride="carousel" data-interval="0">
-                        <!-- Carousel indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel-valorant" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-valorant" data-slide-to="1"></li>
-                        </ol>   
-
-                        <!-- Wrapper for carousel items -->
-                        <div class="carousel-inner">
-                            <!-- First row -->
-                            <div class="carousel-item active">
-                                <div class="row">
-
-                                    <!-- 5v5 Competitive -->
-                                    <div class="col-sm-4">
-                                        <div class="thumb-wrapper">
-                                            <div class="img-box">
-                                                <img src="images/logos/logo-valorant.png" class="img-fluid" alt="">
-                                            </div>
-                                            <div class="thumb-content">
-                                                <h4>5v5 Competitive</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam.</p>
-                                            </div>						
-                                        </div>
-                                    </div>
-
-                                    <!-- Placeholder -->
-                                    <div class="col-sm-4">
-                                        <div class="thumb-wrapper">
-                                            <div class="img-box">
-                                                <img src="images/placeholder.jpg" class="img-fluid" alt="">
-                                            </div>
-                                            <div class="thumb-content">
-                                                <h4>{Placeholder}</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam.</p>
-                                            </div>						
-                                        </div>
-                                    </div>
-
-                                    <!-- Placeholder -->
-                                    <div class="col-sm-4">
-                                        <div class="thumb-wrapper">
-                                            <div class="img-box">
-                                                <img src="images/placeholder.jpg" class="img-fluid" alt="">
-                                            </div>
-                                            <div class="thumb-content">
-                                                <h4>{Placeholder}</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam.</p>
-                                            </div>						
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <!-- Second row -->
-                            <div class="carousel-item">
-                                <div class="row">
-
-                                    <!-- Placeholder -->
-                                    <div class="col-sm-4">
-                                        <div class="thumb-wrapper">
-                                            <div class="img-box">
-                                                <img src="images/placeholder.jpg" class="img-fluid" alt="">
-                                            </div>
-                                            <div class="thumb-content">
-                                                <h4>{Placeholder}</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam.</p>
-                                            </div>						
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-
                         </div>
-                        <!-- Carousel controls -->
-                        <a class="carousel-control-prev" href="#carousel-valorant" data-slide="prev">
-                            <i class="fa fa-angle-left"></i>
-                        </a>
-                        <a class="carousel-control-next" href="#carousel-valorant" data-slide="next">
-                            <i class="fa fa-angle-right"></i>
-                        </a>
                     </div>
+                </section>
+    
+            </div>
+    
+    
+            <!-- Valorant Tab -->
+            <div id="valorant" data-tab-content>
+                <!-- <section class="container">
+                    <h2>Valorant</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, modi nesciunt cupiditate, quasi repudiandae consequuntur magnam vel, voluptatibus ad nisi explicabo aut soluta doloremque atque molestiae qui rerum dolorum animi.</p>
+                </section> -->
+    
+                <section class="container">
+                    <div class="row">
+                        <div class="col-md-10 mx-auto">
+                            <div id="carousel-valorant" class="carousel slide" data-ride="carousel" data-interval="0">
+                            <!-- Carousel indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-valorant" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-valorant" data-slide-to="1"></li>
+                            </ol>   
+    
+                            <!-- Wrapper for carousel items -->
+                            <div class="carousel-inner">
+                                <!-- First row -->
+                                <div class="carousel-item active">
+                                    <div class="row">
+    
+                                        <!-- 5v5 Competitive -->
+                                        <div class="col-sm-4">
+                                            <div class="thumb-wrapper">
+                                                <div class="img-box">
+                                                    <img src="images/logos/logo-valorant.png" class="img-fluid" alt="">
+                                                </div>
+                                                <div class="thumb-content">
+                                                    <h4>5v5 Competitive</h4>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam.</p>
+                                                </div>						
+                                            </div>
+                                        </div>
+    
+                                        <!-- Placeholder -->
+                                        <div class="col-sm-4">
+                                            <div class="thumb-wrapper">
+                                                <div class="img-box">
+                                                    <img src="images/placeholder.jpg" class="img-fluid" alt="">
+                                                </div>
+                                                <div class="thumb-content">
+                                                    <h4>{Placeholder}</h4>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam.</p>
+                                                </div>						
+                                            </div>
+                                        </div>
+    
+                                        <!-- Placeholder -->
+                                        <div class="col-sm-4">
+                                            <div class="thumb-wrapper">
+                                                <div class="img-box">
+                                                    <img src="images/placeholder.jpg" class="img-fluid" alt="">
+                                                </div>
+                                                <div class="thumb-content">
+                                                    <h4>{Placeholder}</h4>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam.</p>
+                                                </div>						
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                </div>
+    
+                                <!-- Second row -->
+                                <div class="carousel-item">
+                                    <div class="row">
+    
+                                        <!-- Placeholder -->
+                                        <div class="col-sm-4">
+                                            <div class="thumb-wrapper">
+                                                <div class="img-box">
+                                                    <img src="images/placeholder.jpg" class="img-fluid" alt="">
+                                                </div>
+                                                <div class="thumb-content">
+                                                    <h4>{Placeholder}</h4>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam.</p>
+                                                </div>						
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                </div>
+    
+    
+                            </div>
+                            <!-- Carousel controls -->
+                            <a class="carousel-control-prev" href="#carousel-valorant" data-slide="prev">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-valorant" data-slide="next">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                        </div>
                     </div>
-                </div>
-            </section>
-
+                </section>
+    
+            </div>
         </div>
     </div>
+    
 
  
 

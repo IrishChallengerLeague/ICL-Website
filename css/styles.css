@@ -53,6 +53,14 @@ html {
   }
 
 body {
+    background-image: 
+        linear-gradient(
+            to bottom, var(--color-primary-dark), var(--color-secondary-gradiant)
+        )
+        ,var(--image-background);
+    /* filter: blur(5px);   FIX - FIND OUT HOW TO USE FILTER ON BACKGROUND IMAGE (the blur includes text when used in jumbotron */
+    background-size: cover;
+    background-attachment: fixed;
     background-color: var(--color-primary);
     font-family: Nunito, Barlow, Arial, Helvetica, sans-serif;
     font-size: 1.2em;
@@ -79,12 +87,8 @@ hr {
 
 #navbar-logo {
     height: 80px;
-    margin: 0;
+    margin: 0 24px 0 0;
     padding: 0;
-}
-
-#navbar-logo {
-    margin-right: 24px;
 }
 
 #navbarSupportedContent {
@@ -148,35 +152,30 @@ hr {
     -moz-border-radius: 10px 10px 10px 10px ; */
 }
 
-
-
-
 /* ______________________________________________________________________________________________________________________ */
 /* _____________________________________________________ jumbotron ______________________________________________________ */
 /* ______________________________________________________________________________________________________________________ */
 .jumbotron {
-    background-image: 
-        linear-gradient(
-            to bottom, var(--color-primary-dark), var(--color-secondary-gradiant)
-        )
-        ,var(--image-background);
-    /* filter: blur(5px);   FIX - FIND OUT HOW TO USE FILTER ON BACKGROUND IMAGE (the blur includes text when used in jumbotron */
-    background-size: cover;
-    background-attachment: fixed;
     border-radius: 0;
     width: 100%;
     height: auto;
     color: white;
     text-align: center;
     margin: 0;
-    
-    /* FIX - try to center the jumbotron properly */
-    padding: 80px 80px;
-    border-bottom: 1px solid var(--color-secondary-dark);
+    border-bottom: 3px solid var(--color-secondary-dark);
 }
+
+.vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
+  }
 
 .large-jumbotron {
     min-height: 800px;
+    padding-top: 0;
+    padding-bottom: 120px;
     border-bottom: none;
 }
 
@@ -199,7 +198,7 @@ hr {
 #jumbotron-btn {
     background-color: var(--color-secondary);
     border-color: var(--color-secondary);
-    margin-top: 64px;
+    margin-top: 32px;
 }
 
 #jumbotron-btn:hover {
@@ -234,9 +233,6 @@ hr {
     color: var(--color-text-muted);
 } */
 
-
-
-
 /* ______________________________________________________________________________________________________________________ */
 /* _____________________________________________________ sections _______________________________________________________ */
 /* ______________________________________________________________________________________________________________________ */
@@ -246,6 +242,12 @@ section {
 
 section p {
     font-size: 1.1em;
+}
+
+.container-fluid {
+    background-color: var(--color-primary);
+    margin: 0;
+    padding: 80px 80px 240px 80px;
 }
 
 .map-responsive {
@@ -462,9 +464,9 @@ form label {
 /* ______________________________________________________________________________________________________________________ */
 /* _______________________________________________________ footer _______________________________________________________ */
 /* ______________________________________________________________________________________________________________________ */
-footer {
+/* footer {
     margin-top: 240px;
-}
+} */
 
 #footer-home {
     margin-top: 0px;
