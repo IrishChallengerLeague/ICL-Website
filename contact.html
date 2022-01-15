@@ -50,8 +50,7 @@
  
         <!-- Left Menu -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-
+            <ul class="navbar-nav mr-auto">
                 <!-- Home -->
                 <li class="nav-item dropdown">   <!-- 'dropdown' added because the hover effect doesn't work without it for some reason -->
                     <a class="nav-link" href="index.html">Home</a>
@@ -59,11 +58,11 @@
 
                 <!-- Games -->
 <!--                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="Games.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Games</a>
+                    <a class="nav-link dropdown-toggle" href="games.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Games</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="Games.html">CS:GO</a>
+                        <a class="dropdown-item" href="games.html">CS:GO</a>
                         <hr>
-                        <a class="dropdown-item" href="Games.html">Valorant</a>
+                        <a class="dropdown-item" href="games.html">Valorant</a>
                         <hr>
                     </div>
                 </li> -->
@@ -83,7 +82,7 @@
                     <a class="nav-link" href="about.html">About</a>
                 </li> -->
 
-                <!-- Contact -->
+                <!-- Contact Us -->
                 <li class="nav-item dropdown active">   <!-- 'dropdown' added because the hover effect doesn't work without it for some reason -->
                     <a class="nav-link glow-button" href="contact.html">Contact<span class="sr-only">(current)</span></a>
                 </li>
@@ -94,7 +93,6 @@
 <!--             <div class="collapse navbar-collapse" id="navbar-faceit-login">
                 <ul class="navbar-nav ml-auto">
 
-                    <!-- Faceit Login (Placeholder) -->
                     <li>
                         <button type="button" class="btn btn-secondary">Faceit Login {Placeholder}</button>
                     </li>
@@ -103,7 +101,7 @@
             </div> -->
 
         </div><!-- collapse navbar -->
-    </nav><!-- menu -->
+    </nav><!-- navbar -->
 
 
 
@@ -144,11 +142,61 @@
 
             <br>
 
+
+            <!-- Buttons Collapse-->
             <div class="lead">
-                <a class="btn btn-large btn-secondary glow-on-hover" href=#form><strong>Send Us A Message</strong></a>
+                <a class="btn btn-large btn-secondary glow-on-hover" data-toggle="collapse" href="#collapseForm" role="button" aria-expanded="false" aria-controls="collapseMessage">Send Us a Message</a>
+            </div>
+
+            <!-- Message Collapsed form -->
+            <div class="container collapse" id="collapseForm">
+                <div class="container">
+
+                    <div class="container-lg">
+                        <div class="row">
+                            <div class="col-md-10 mx-auto">
+                                <div class="contact-form">
+                                    <form id="form" action="/examples/actions/confirmation.php" method="post">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="inputName"><strong>Name</strong></label>
+                                                    <input type="text" class="form-control" id="inputName" placeholder="Required" required>
+                                                </div>
+                                            </div>                
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="inputEmail"><strong>Email</strong></label>
+                                                    <input type="email" class="form-control" id="inputEmail" placeholder="Required" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="inputPhone"><strong>Phone</strong></label>
+                                                    <input type="text" class="form-control" id="inputPhone" placeholder="Optional">
+                                                </div>
+                                            </div>
+                                        </div>            
+                                        <div class="form-group">
+                                            <label for="inputSubject"><strong>Subject</strong></label>
+                                            <input type="text" class="form-control" id="inputSubject" placeholder="Required" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputMessage"><strong>Message</strong></label>
+                                            <textarea class="form-control" id="inputMessage" rows="5" placeholder="Required" required></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-secondary"><i class="fa fa-paper-plane"></i><strong> Send</strong></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
+
+
     </div>
 
 
@@ -157,50 +205,7 @@
     <!-- ___________________________________________________________________________________________________________________ -->
     <!-- ___________________________________________________ sections ______________________________________________________ -->
     <!-- ___________________________________________________________________________________________________________________ -->
-    <div class="container-fluid">
-
-        <div class="container-lg">
-            <div class="row">
-                <div class="col-md-10 mx-auto">
-                    <div class="contact-form">
-                        <form id="form" action="/examples/actions/confirmation.php" method="post">
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <div class="form-group">
-                                        <label for="inputName"><strong>Name</strong></label>
-                                        <input type="text" class="form-control" id="inputName" placeholder="Required" required>
-                                    </div>
-                                </div>                
-                                <div class="col-sm-4">
-                                    <div class="form-group">
-                                        <label for="inputEmail"><strong>Email</strong></label>
-                                        <input type="email" class="form-control" id="inputEmail" placeholder="Required" required>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="form-group">
-                                        <label for="inputPhone"><strong>Phone</strong></label>
-                                        <input type="text" class="form-control" id="inputPhone" placeholder="Optional">
-                                    </div>
-                                </div>
-                            </div>            
-                            <div class="form-group">
-                                <label for="inputSubject"><strong>Subject</strong></label>
-                                <input type="text" class="form-control" id="inputSubject" placeholder="Required" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="inputMessage"><strong>Message</strong></label>
-                                <textarea class="form-control" id="inputMessage" rows="5" placeholder="Required" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-secondary"><i class="fa fa-paper-plane"></i><strong> Send</strong></button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
+    
 
 
     <!-- ___________________________________________________________________________________________________________________ -->
@@ -215,7 +220,6 @@
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                     <h5 class="text-uppercase mb-4 font-weight-bold text-dark">Irish Challenger League</h5>
                     <p class="text-muted">Ireland's official CSGO and Valorant community.</p>
-                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem non, exercitationem voluptate facilis magni impedit esse recusandae praesentium dignissimos vel ratione quia. Nobis accusantium laborum dignissimos eius quo, consequatur reiciendis.</p>
                 </div><!-- column -->
 
                 <!-- Games -->
@@ -266,12 +270,12 @@
                         <a href="https://steamcommunity.com/groups/ICL_hub" class="text-muted" style="text-decoration: none;">Steam</a>
                     </p>
                     <p class="text-muted">
-                        <!-- <i class="fa fa-faceit"></i> -->
-                        <a href="https://www.faceit.com/en/organizers/a53ee663-7009-450b-8f17-8c8422169595/Irish%20Challenger%20League" class="text-muted" style="text-decoration: none;">Faceit</a>
+                        <i class="fa fa-facebook"></i>
+                        <a href="https://www.facebook.com/ICLDivison/" class="text-muted" style="text-decoration: none;">Facebook</a>
                     </p>
                     <p class="text-muted">
-                        <!-- <i class="fa fa-cahllengermode"></i> -->
-                        <a href="https://www.challengermode.com/s/ICL" class="text-muted" style="text-decoration: none;">Challengermode</a>
+                        <!-- <i class="fa fa-faceit"></i> -->
+                        <a href="https://www.faceit.com/en/organizers/a53ee663-7009-450b-8f17-8c8422169595/Irish%20Challenger%20League" class="text-muted" style="text-decoration: none;">Faceit</a>
                     </p>
                 </div><!-- column -->
             </div><!-- row -->
