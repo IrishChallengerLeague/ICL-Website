@@ -203,6 +203,7 @@ hr {
 #jumbotron-btn {
     background-color: var(--color-secondary);
     border-color: var(--color-secondary);
+    color: white;
     margin-top: 32px;
 }
 
@@ -222,33 +223,34 @@ hr {
     width: 160px;
 }
 
-.contact-type-i {
-    color: var(--color-text-dark);
+.jumbotron a {
+    text-decoration: none;
+    color: var(--color-text-muted);
+    transition: ease-in-out 0.2s;
 }
 
-#collapseForm {
+.jumbotron a:hover {
+    color: var(--color-secondary);
+}
+
+#contact
+
+/* #collapseForm {
     margin-top: 20px;
-
-    margin-bottom: 240px;
-
+    margin-bottom: 300px;
     padding: 20px 0;
     max-width: 720px;
-
-    /* border: 2px solid var(--color-primary-dark); */
+    border: 2px solid var(--color-primary-dark);
     border-radius: 25px;
-
     background-image: 
         linear-gradient(
             to bottom, var(--color-secondary-gradiant), var(--color-primary-gradiant)
         )
         ,var(--image-background);
-
-    /* background-image: var(--image-background); */
     background-size: cover;
     background-attachment: fixed;
-    backdrop-filter: invert();
-
-}
+    backdrop-filter: blur(50px);
+} */
 
 .collapse {
     margin-top: 16px;
