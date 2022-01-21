@@ -200,10 +200,40 @@ hr {
 
 #jumbotron-btn {
     background-color: var(--color-secondary);
-    border-color: var(--color-secondary);
+    border: none;
     color: white;
     margin-top: 32px;
+    border-radius: 16px;
+    /* transition: all 0.5s; */
 }
+
+/* #jumbotron-btn a {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#jumbotron-btn a:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#jumbotron-btn:hover a {
+    padding-right: 25px;
+}
+
+#jumbotron-btn:hover a:after {
+    opacity: 1;
+    right: 0;
+} */
+
+
+/* ----------------------------------------- */
+  
 
 #jumbotron-btn:hover {
     border-color: var(--color-primary-dark);
