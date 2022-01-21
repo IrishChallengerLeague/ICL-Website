@@ -3,7 +3,7 @@
     Author: Lochlann O Neill
     Date:   26/12/2021
     Links:  https://linktr.ee/lochlannoneill
-     
+        
 -->
 
 <!DOCTYPE html>
@@ -12,7 +12,7 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICL</title>
+    <title>ICL - Join Us</title>
     <link rel="icon" type="image/x-icon" href="images/logos/logo-transparent.ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">    
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="js/script.js" defer></script>
 </head>
 
@@ -30,7 +31,7 @@
     <a id="top"></a>
 
     <!-- __________________________________________________________________________________________________________________ -->
-    <!--______________________________________________________ navbar _____________________________________________________ -->
+    <!-- _____________________________________________________ navbar _____________________________________________________ -->
     <!-- __________________________________________________________________________________________________________________ -->
     <nav class="navbar navbar-expand-lg navbar-dark top" id="navbar">
         <a href="index.html">
@@ -45,8 +46,8 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <!-- Home -->
-                <li class="nav-item dropdown active">   <!-- 'dropdown' added because the hover effect doesn't work without it for some reason -->
-                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                <li class="nav-item dropdown">   <!-- 'dropdown' added because the hover effect doesn't work without it for some reason -->
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
 
                 <!-- Games -->
@@ -61,8 +62,8 @@
                 </li> -->
 
                 <!-- Join -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="join.html">Join Us</a>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link" href="join.html">Join Us<span class="sr-only">(current)</span></a>
                 </li>
 
                 <!-- Rules -->
@@ -97,24 +98,68 @@
     <!-- ___________________________________________________________________________________________________________________ -->
     <!-- ___________________________________________________ jumbotron _____________________________________________________ -->
     <!-- ___________________________________________________________________________________________________________________ -->
-    <div class="jumbotron large-jumbotron vertical-center bg-transparent color" id="home-jumbotron">
-        <div class="container">
-            
-            <div class="container">
-                <img class="jumbotron-logo" src="images/logos/logo-transparent.png" alt="Logo of ICL">
-            </div>
+    <div class="jumbotron bg-transparent">
 
-            <div class="container">
-                <h1 class="display-4">Irish Challenger League</h1>
-                <p class="lead" id="lead-text"><i>Ireland's official CSGO and Valorant community.</i></p>
-            </div>
-            
-            <div class="lead">
-                <a class="btn btn-lg btn-primary font-weight-bold glow-on-hover" id="jumbotron-btn" href="https://discord.gg/dskdbfvb9S" role="button">Join Our Discord</a>
-            </div>
+        <h2 class="display-4">
+            <img class="jumbotron-logo" src="images/logos/logo-transparent.png" alt="Logo of ICL">
+            Join Us
+        </h2>
+<!-- <p class="text-muted">Follow these steps to begin playing on our platform</p> -->
 
-        </div>
-    </div>
+        <br>
+        <section id="instructions">
+            <div class="container text-center">
+
+                <div class="row">
+                    <div class="col-12 col-md col-lg-4">
+                        <div class="card text-center">
+                            <img class="card-img-top" src="images/anticheat.png" alt="Image of faceit anticheat download page">
+                            <div class="card-body">
+                                <p class="card-text">Download the <a href="https://www.faceit.com/en/anti-cheat">Faceit Anti-Cheat</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md col-lg-4">
+                        <div class="card text-center">
+                            <img class="card-img-top" src="images/hubs.png" alt="Image of ICL faceit hubs">
+                            <div class="card-body">
+                                <p class="card-text">Join one of our <a href="https://www.faceit.com/en/organizers/a53ee663-7009-450b-8f17-8c8422169595/Irish%20Challenger%20League">Faceit hubs</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md col-lg-4">
+                        <div class="card text-center">
+                            <img class="card-img-top" src="images/discord.png" alt="Image of ICL discord">
+                            <div class="card-body">
+                                <p class="card-text">Join our <a href="https://discord.gg/dskdbfvb9S">discord server</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md col-lg-4">
+                        <div class="card text-center">
+                            <img class="card-img-top" src="images/profile_link.png" alt="Image of ICL-Faceit profile link">
+                            <div class="card-body">
+                                <p class="card-text">Type "icl.link {faceit link}" in #bot</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md col-lg-4">
+                        <div class="card text-center">
+                            <img class="card-img-top" src="images/play.png" alt="Image of Faceit play button">
+                            <div class="card-body">
+                                <p class="card-text">You are ready to <a href="https://www.faceit.com/en/dashboard">play</a>!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div> <!-- jumbotron -->
 
 
 
@@ -129,7 +174,7 @@
     <!-- ___________________________________________________________________________________________________________________ -->
     <!-- ______________________________________________________ footer ______________________________________________________-->
     <!-- ___________________________________________________________________________________________________________________ -->
-    <footer class="bg-dark text-white pt-5 pb-4" id="footer-home">
+    <footer class="bg-dark text-white pt-5 pb-4">
         <div class="container text-center text-md-left">
 
             <div class="row text-center text-left">

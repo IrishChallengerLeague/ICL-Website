@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500&family=Orbitron:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat+Alternates:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto:wght@300;400&display=swap');
 
 :root {
     --color-white: rgb(255, 255, 255);
@@ -64,7 +61,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-color: var(--color-primary);
-    font-family: Nunito, Barlow, Arial, Helvetica, sans-serif;
+    font-family: Nunito, Arial, sans-serif;
     font-size: 1.2em;
     padding: 0;
     margin: 0;
@@ -91,6 +88,7 @@ hr {
     height: 80px;
     margin: 0 24px 0 0;
     padding: 0;
+    opacity: 60%;
 }
 
 #navbarSupportedContent {
@@ -163,7 +161,8 @@ hr {
     color: white;
     text-align: center;
     margin: 0;
-    border-bottom: 3px solid var(--color-secondary-dark);
+    padding-top: 0;
+    /* border-bottom: 3px solid var(--color-secondary-dark); */
 }
 
 .vertical-center {
@@ -175,7 +174,6 @@ hr {
 
 .large-jumbotron {
     height: 90vh;
-    padding-top: 0;
     /* padding-bottom: 240px; */
     border-bottom: none;
 }
@@ -233,7 +231,28 @@ hr {
     color: var(--color-secondary);
 }
 
-#contact
+.card {
+    margin-bottom: 16px;
+    background-color: var(--color-primary-gradiant);
+    box-shadow: 0 0 24px 8px rgba(0,0,0,0.5);
+}
+
+.card-body {
+}
+
+.card p {
+    color: var(--color-white);
+}
+
+.card a {
+    color: var(--color-secondary-bright);
+}
+
+.card a:hover {
+    color: var(--color-secondary);
+}
+
+/* #contact */
 
 /* #collapseForm {
     margin-top: 20px;
@@ -252,12 +271,12 @@ hr {
     backdrop-filter: blur(50px);
 } */
 
-.collapse {
+/* .collapse {
     margin-top: 16px;
     text-align: center;
-}
+} */
 
-#collapseForm .btn {
+/* #collapseForm .btn {
     background-image: 
         linear-gradient(
             to bottom, var(--color-primary-bright), var(--color-secondary)
@@ -265,9 +284,8 @@ hr {
         ,var(--image-background);
         background-size: cover;
     background-attachment: fixed;
-
-    /* background-image: var(--image-background); */
-}
+    background-image: var(--image-background);
+} */
 
 /* #contact-favicon-mail {
     color: var(--color-primary-dark);
@@ -284,7 +302,7 @@ hr {
 /* ______________________________________________________________________________________________________________________ */
 /* _____________________________________________________ sections _______________________________________________________ */
 /* ______________________________________________________________________________________________________________________ */
-section {
+/* section {
     margin-top: 64px;
 }
 
@@ -296,7 +314,7 @@ section p {
     background-color: var(--color-primary);
     margin: 0;
     padding: 80px 80px 240px 80px;
-}
+} */
 
 .map-responsive {
     position: relative;
