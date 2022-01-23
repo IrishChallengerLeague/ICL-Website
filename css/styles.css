@@ -205,16 +205,12 @@ hr {
 }
 
 #jumbotron-btn {
-    border-radius: 16px;
+    border-radius: 24px;
     background-color: var(--color-secondary);
     border: none;
     color: white;
     margin-top: 32px;
     box-shadow: 0 0 24px 8px rgba(0,0,0,0.4);
-}
-  
-#jumbotron-btn:hover {
-    border-radius: 24px;
 }
 
 /* #jumbotron-btn {
@@ -326,11 +322,11 @@ hr {
 }
 
 .card img {
-    filter: brightness(60%);
+    filter: brightness(80%);
 }
 
 .card img:hover {
-    filter: brightness(100%);
+    filter: brightness(150%);
     transition: 0.15s ease-in-out;
 }
 
