@@ -214,7 +214,7 @@ hr {
 } */
 
 .lead a {
-    color: white !important;
+    color: white !important; /* not sure why but i need to use the important tag here */
     position: relative;
     display: inline-block;
     padding: 15px 30px;
@@ -415,6 +415,7 @@ hr {
 .card:hover {
     transform: scale(1.125);
     transition: 0.3s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 0 10px var(--color-secondary-bright), 0 0 20px var(--color-secondary-bright), 0 0 40px var(--color-secondary-bright);
 }
 
 .card:hover:before {
